@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="tailwind.js"></script>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="prism.css">
+    <script src="prism.js"></script>
+    <title>HTML Cheatsheet by Pritish Academy</title>
+    <style>
+        *{
+            transition: all ease-in-out 0.6s;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #0a0908;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #e63946, #4361ee);
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, #e82435, #294ef2);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-slate-950 flex justify-center align-center text-white text-4xl text-center p-4">
+        <img src="logo.jpg" alt="" class="w-12 h-12 rounded-full mr-2">
+        HTML Cheatsheet by Pritish Academy
+    </header>
+
+    <ol class="w-[60vw] mx-auto list-decimal">
+        <li>
+            <h2 class="text-3xl font-bold">Boilerplate</h2>
+            <pre class="language-html">
+<code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Heading</h2>
+            <pre class="language-html">
+<code>&lt;h1&gt;Heading&lt;/h1&gt;
+&lt;h2&gt;Heading&lt;/h2&gt;
+&lt;h3&gt;eading&lt;/h3&gt;
+&lt;h4&gt;Heading&lt;/h4&gt;
+&lt;h5&gt;Heading&lt;/h5&gt;
+&lt;h6&gt;Heading&lt;/h6&gt;</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Div Tag</h2>
+            <pre class="language-html">
+<code>&lt;div&gt; This is div &lt;/div&gt;</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Span</h2>
+            <pre class="language-html">
+<code>&lt;span&gt; This is span &lt;/span&gt;</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Paragraph tag</h2>
+            <pre class="language-html">
+<code>&lt;p&gt; This is paragraph &lt;/p&gt;</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Pre tag</h2>
+            <pre class="language-html">
+<code>&lt;pre&gt; This is pre tag &lt;/pre&gt;</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Code tag</h2>
+            <pre class="language-html">
+<code>&lt;code&gt; import react from React &lt;/code&gt;</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Bold tag</h2>
+            <pre class="language-html">
+<code>&lt;b&gt; HTML &lt;/b&gt;</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Italic tag</h2>
+            <pre class="language-html">
+<code>&lt;i&gt; CSS &lt;/i&gt;</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Underline tag</h2>
+            <pre class="language-html">
+<code>&lt;i&gt; JavaScript &lt;/i&gt;</code></pre>
+        </li>
+
+
+        <li>
+            <h2 class="text-3xl font-bold">Sub tag</h2>
+            <pre class="language-html">
+<code>H&lt;sub&gt;2&lt;/sub&gt; + O&lt;sub&gt;2&lt;/sub&gt; ---- H&lt;sub&gt;2&lt;/sub&gt;O</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Sup tag</h2>
+            <pre class="language-html">
+<code>2&lt;sup&gt;3&lt;/sup&gt;=8</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Unorganized list</h2>
+            <pre class="language-html">
+<code>&lt;ul&gt;
+    &lt;li&gt;Apple&lt;/li&gt;
+    &lt;li&gt;Banana&lt;/li&gt;
+    &lt;li&gt;Orange&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Organized list</h2>
+            <pre class="language-html">
+<code>&lt;ol&gt;
+    &lt;li&gt;Python&lt;/li&gt;
+    &lt;li&gt;Java&lt;/li&gt;
+    &lt;li&gt;C++&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Image tag</h2>
+            <pre class="language-html">
+<code>&lt;img src="image.jpg" alt="Image"&gt;</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Video tag</h2>
+            <pre class="language-html">
+<code>&lt;video width="480" height="320" controls loop&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    Your browser does not support the video tag.
+&lt;/video&gt;</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Audio tag</h2>
+            <pre class="language-html">
+<code>&lt;audio controls loop&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    Your browser does not support the audio element.
+&lt;/audio&gt;</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Table tag</h2>
+            <pre class="language-html">
+<code>&lt;table border="2"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Marks&lt;/th&gt;
+        &lt;th&gt;Result&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Shashwat&lt;/td&gt;
+        &lt;td&gt;100&lt;/td&gt;
+        &lt;td&gt;Pass&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Rohan&lt;/td&gt;
+        &lt;td&gt;0&lt;/td&gt;
+        &lt;td&gt;Fail&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Anchor tag</h2>
+            <pre class="language-html">
+<code>&lt;a href="https://www.youtube.com/@pritishacademy"&gt;Pritish Academy&lt;/a&gt;</code></pre>
+        </li>
+        <li>
+            <h2 class="text-3xl font-bold">Form tag</h2>
+            <pre class="language-html">
+<code>&lt;form action="action.php"&gt;
+    &lt;input type="text" name="Username" id="username"&gt;
+    &lt;input type="password" name="Username" id="username"&gt;
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Input text</h2>
+            <pre class="language-html">
+<code>&lt;input type="text" name="name" placeholder="Enter name"&gt;</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Input password</h2>
+            <pre class="language-html">
+<code>&lt;input type="password" name="password" placeholder="Enter password"&gt;</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Input checkbox</h2>
+            <pre class="language-html">
+<code>&lt;input type="checkbox" value="yes"&gt;Yes
+&lt;input type="checkbox" value="No"&gt;no</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Input radio</h2>
+            <pre class="language-html">
+<code>&lt;input type="radio" name="gender" value="male"&gt; Male
+&lt;input type="radio" name="gender" value="female"&gt; Female
+&lt;input type="radio" name="gender" value="transgender"&gt; Transgender</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Input dropdown</h2>
+            <pre class="language-html">
+<code>&lt;select name="language" id="language"&gt;
+    &lt;option value="hindi"&gt;हिंदी&lt;/option&gt;
+    &lt;option value="canada"&gt;English&lt;/option&gt;
+    &lt;option value="french"&gt;Français&lt;/option&gt;
+    &lt;option value="bangla"&gt;বাংলা&lt;/option&gt;
+    &lt;option value="tamil"&gt;தமிழ்&lt;/option&gt;
+    &lt;option value="telugu"&gt;తెలుగు&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Input file</h2>
+            <pre class="language-html">
+<code>&lt;input type="file" name="your profile photo"&gt;</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Input range</h2>
+            <pre class="language-html">
+<code>&lt;input type="range" name="age" min="0" max="18"&gt;</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Input date</h2>
+            <pre class="language-html">
+<code>&lt;input type="date" name="birthdate"&gt;</code></pre>
+        </li>
+
+        <li>
+            <h2 class="text-3xl font-bold">Input submit</h2>
+            <pre class="language-html"><code>&lt;input type="submit" value="Submit"&gt;</code></pre>
+    </ol>
+
+    <div class="container flex flex-col mx-auto text-center">
+        <a class="bg-red-600 hover:bg-blue-600 rounded-full my-3 px-4 py-2 text-white text-center" href="https://www.youtube.com/@pritishacademy" target="_blank">Subscribe Pritish Academy</a>
+        <a class="bg-blue-600 hover:bg-red-600 rounded-full my-3 px-4 py-2 text-white text-center" href="https://www.youtube.com/watch?v=kUMe1FH4CHE" target="_blank">Watch HTML Course</a>
+    </div>
+    <footer class="bg-slate-950 text-white text-center my-2 p-4">
+        &copy; 2021 Pritish Academy. All rights reserved.
+    </footer>
+</body>
+
+</html>
